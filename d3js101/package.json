@@ -1,0 +1,12 @@
+{
+  "author": "Ian Wu <onlinemad@gmail.com>",
+  "name": "d3js",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.5.1"
+  }
+}

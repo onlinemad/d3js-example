@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <p> paragraph 1 </p>
+    <p> paragraph 2 </p>
+    <p> paragraph 3 </p>
+    <p> paragraph 4 </p>
+    <p> paragraph 5 </p>
+    <p> paragraph 6 </p>
+  </body>
+  <script type="text/javascript">
+    d3.selectAll("p")
+      .data([4, 8, 15, 16, 23, 42])
+      .style("font-size", function(d) {
+        return d + "px";
+      });
+  </script>
+</html>

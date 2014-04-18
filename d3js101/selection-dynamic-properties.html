@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <p> paragraph 1 </p>
+    <p> paragraph 2 </p>
+    <p> paragraph 3 </p>
+  </body>
+  <script type="text/javascript">
+    d3.selectAll("p").style("color", function() {
+      return "hsl(" + Math.random() * 360 + ",100%,50%)";
+    });
+    setTimeout(function() {
+      d3.selectAll("p").style("color", function(d, i) {
+        return i % 2 ? "#aaa" : "#123456";
+      });
+    }, 3000);
+  </script>
+</html>
